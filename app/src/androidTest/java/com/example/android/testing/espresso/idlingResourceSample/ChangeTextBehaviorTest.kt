@@ -30,6 +30,6 @@ class ChangeTextBehaviorTest {
     @AwaitImageLoad
     fun changeText_sameActivity() {
         onView(withId(R.id.btn)).perform(ViewActions.click())
-//        onView(withId(R.id.image)).check(matches(withBackgroundLoaded(ImageLoader.ImageLoadingState.Success)))
+        onView(withId(R.id.image)).check(matches(withBackgroundLoaded(ImageLoader.ImageLoadingState.Success)))
     }
 }
